@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" stylesheets="@../style/userchoice.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.systemmanagemenbus.UserChoiceController">
+
+    <children>
+        <!-- Label Judul -->
+        <Label fx:id="lblTitle" alignment="CENTER" layoutX="150.0" layoutY="103.0" prefHeight="60" prefWidth="300" text="InfoTayo" textAlignment="CENTER" textFill="#4f5380">
+            <font>
+                <Font name="Arial Black" size="38.0" />
+            </font>
+        </Label>
+
+        <!-- Tombol Admin -->
+        <Button fx:id="btnAdmin" layoutX="200.0" layoutY="190.0" onAction="#loginAdmin" prefHeight="40" prefWidth="200" text="Admin" />
+
+        <!-- Tombol Mahasiswa -->
+        <Button fx:id="btnMahasiswa" layoutX="200.0" layoutY="238.0" onAction="#loginMahasiswa" prefHeight="40" prefWidth="200" text="Mahasiswa" />
+    </children>
+</AnchorPane>

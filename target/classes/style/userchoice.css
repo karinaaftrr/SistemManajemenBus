@@ -1,0 +1,18 @@
+.mainFxmlClass {
+    -fx-background-color: transparent;
+}
+.button {
+    -fx-background-color: 
+        linear-gradient(#f0f0f0, #e0e0e0),
+        #e0e0e0,
+        linear-gradient(#f0f0f0 0%, #d0d0d0 100%),
+        linear-gradient(#e0e0e0 0%, #c0c0c0 100%);
+    -fx-background-insets: 0, 1, 4, 5;
+    -fx-background-radius: 5;
+    -fx-padding: 8 20 8 20;
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333;
+}
+.button:hover {
+    -fx-background-color: linear-gradient(#d0d0d0, #c0c0c0);
+}
