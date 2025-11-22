@@ -1,4 +1,5 @@
 Admin\LoginadminController.class
+Admin\DashboardAdminController.class
 com\mycompany\systemmanagemenbus\App.class
 module-info.class
 Mahasiswa\LoginMahasiswaController.class

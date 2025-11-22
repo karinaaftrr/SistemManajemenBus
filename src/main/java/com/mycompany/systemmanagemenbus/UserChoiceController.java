@@ -20,7 +20,7 @@ public class UserChoiceController {
             // Ambil stage yang sama dari tombol
             Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
             stage.setTitle("Login Admin");
-            stage.setScene(new Scene(root, 600, 400));
+            stage.setScene(new Scene(root, 700, 500));
             stage.show();
             
         } catch (IOException e) {
@@ -34,7 +34,7 @@ public class UserChoiceController {
             Parent root = FXMLLoader.load(getClass().getResource("/fxml/LoginMahasiswa.fxml"));
             Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
             stage.setTitle("Login Mahasiswa");
-            stage.setScene(new Scene(root, 600, 400));
+            stage.setScene(new Scene(root, 700, 500));
             stage.show();
         } catch (IOException e) {
             e.printStackTrace();

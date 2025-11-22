@@ -4,47 +4,55 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 <?import org.kordamp.ikonli.javafx.FontIcon?>
 
-<StackPane prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" stylesheets="@/style/loginadmin.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.LoginadminController">
+<StackPane prefHeight="500.0" prefWidth="700.0" styleClass="mainFxmlClass" stylesheets="@/style/loginadmin.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.LoginadminController">
 
     <children>
         <!-- Main Form -->
         <AnchorPane fx:id="main_form" prefHeight="400.0" prefWidth="600.0" styleClass="right-form">
 
             <!-- Left Panel -->
-            <AnchorPane fx:id="leftPane" prefHeight="401.0" prefWidth="300.0" styleClass="left-form" stylesheets="@../style/loginadmin.css">
-            </AnchorPane>
+            <AnchorPane fx:id="leftPane" prefHeight="500.0" prefWidth="372.0" styleClass="left-form" stylesheets="@../style/loginadmin.css">
+            <children>
+               <ImageView fitHeight="145.0" fitWidth="159.0" layoutX="93.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../Image/Rectangle.png" />
+                  </image>
+               </ImageView>
+            </children></AnchorPane>
 
             <!-- Right Panel -->
-            <AnchorPane layoutX="300.0" prefHeight="400.0" prefWidth="300.0" styleClass="right-form" stylesheets="@../style/loginadmin.css">
+            <AnchorPane layoutX="342.0" prefHeight="500.0" prefWidth="358.0" styleClass="right-form" stylesheets="@../style/loginadmin.css">
 
                 <!-- Label -->
-                <Label layoutX="121.0" layoutY="132.0" text="Admin" textFill="#211e80">
+                <Label layoutX="168.0" layoutY="179.0" text="Admin" textFill="#211e80">
                     <font>
                         <Font name="Arial Black" size="17.0" />
                     </font>
                 </Label>
 
                 <!-- FontIcon -->
-                <FontIcon iconLiteral="fas-user" iconSize="80" layoutX="115.0" layoutY="108.0" />
+                <FontIcon iconLiteral="fas-user" iconSize="80" layoutX="162.0" layoutY="159.0" />
 
                 <!-- Username -->
-                <TextField fx:id="username" layoutX="40.0" layoutY="185.0" prefHeight="30.0" prefWidth="220.0" promptText="Username" styleClass="textfield" stylesheets="@../style/loginadmin.css" />
+                <TextField fx:id="username" layoutX="82.0" layoutY="220.0" prefHeight="30.0" prefWidth="220.0" promptText="Username" styleClass="textfield" stylesheets="@../style/loginadmin.css" />
 
                 <!-- Password -->
-                <PasswordField fx:id="password" layoutX="40.0" layoutY="227.0" prefHeight="30.0" prefWidth="220.0" promptText="Password" styleClass="textfield" stylesheets="@../style/loginadmin.css" />
+                <PasswordField fx:id="password" layoutX="82.0" layoutY="257.0" prefHeight="30.0" prefWidth="220.0" promptText="Password" styleClass="textfield" stylesheets="@../style/loginadmin.css" />
 
                 <!-- Login Button -->
-                <Button fx:id="login" layoutX="110.0" layoutY="267.0" onAction="#login" prefHeight="43.0" prefWidth="79.0" styleClass="login-btn" stylesheets="@../style/loginadmin.css" text="LOGIN" />
+                <Button fx:id="login" layoutX="153.0" layoutY="330.0" onAction="#login" prefHeight="43.0" prefWidth="79.0" styleClass="login-btn" stylesheets="@../style/loginadmin.css" text="LOGIN" />
 
                 <!-- Close Button -->
-                <Button fx:id="btnClose" layoutX="258.0" layoutY="2.0" onAction="#Close" prefHeight="24.0" prefWidth="41.0" styleClass="close" stylesheets="@../style/loginadmin.css" text="">
+                <Button fx:id="btnClose" layoutX="311.0" layoutY="14.0" onAction="#Close" prefHeight="24.0" prefWidth="41.0" styleClass="close" stylesheets="@../style/loginadmin.css" text="">
                     <graphic>
-                        <FontIcon iconLiteral="fas-window-close" iconSize="20" />
+                        <FontIcon iconLiteral="fas-window-close" iconSize="20" text="" />
                     </graphic>
                 </Button>
 

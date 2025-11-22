@@ -16,11 +16,12 @@ public class App extends Application {
             Parent root = FXMLLoader.load(getClass().getResource("/fxml/UserChoice.fxml"));
 
             stage.setTitle("Pilih User"); 
-            stage.setScene(new Scene(root, 600, 400)); 
+            stage.setScene(new Scene(root, 700, 500)); 
             stage.setResizable(false); 
             stage.show();
         } catch (IOException e) {
             System.err.println("Gagal load UserChoice.fxml");
+            e.printStackTrace();
         }
     }
 
