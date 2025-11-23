@@ -12,15 +12,15 @@ public class App extends Application {
     @Override
     public void start(Stage stage) {
         try {
-            // Load scene awal: UserChoice.fxml
-            Parent root = FXMLLoader.load(getClass().getResource("/fxml/UserChoice.fxml"));
+            // Load scene awal: userrchoice.fxml
+            Parent root = FXMLLoader.load(getClass().getResource("/fxml/userrchoice.fxml"));
 
             stage.setTitle("Pilih User"); 
             stage.setScene(new Scene(root, 700, 500)); 
             stage.setResizable(false); 
             stage.show();
         } catch (IOException e) {
-            System.err.println("Gagal load UserChoice.fxml");
+            System.err.println("Gagal load userrchoice.fxml");
             e.printStackTrace();
         }
     }

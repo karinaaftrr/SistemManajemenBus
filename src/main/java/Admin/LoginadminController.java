@@ -52,7 +52,7 @@ public class LoginadminController {
 
             try {
                 // Panggil Dashboard
-                Parent root = FXMLLoader.load(getClass().getResource("/fxml/DashboardAdmin.fxml"));
+                Parent root = FXMLLoader.load(getClass().getResource("/fxml/Dashboard_Admin.fxml"));
                 Stage stage = new Stage();
                 stage.setTitle("Dashboard Admin");
                 stage.setScene(new Scene(root));
@@ -62,7 +62,6 @@ public class LoginadminController {
                 ((Stage)((Node)event.getSource()).getScene().getWindow()).close();
 
             } catch (IOException e) {
-                e.printStackTrace();
             }
 
         } else {
