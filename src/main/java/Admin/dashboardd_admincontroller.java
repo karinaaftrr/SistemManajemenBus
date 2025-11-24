@@ -112,8 +112,8 @@ public class dashboardd_admincontroller implements Initializable {
         Stage stage = (Stage) ((Node) event.getSource())
                 .getScene()
                 .getWindow();
-
-        stage.setScene(scene);
+        
+        stage.setScene(new Scene(root, 750, 490));
         stage.show();
     }
 }

@@ -25,7 +25,7 @@ public class UserrChoiceController implements Initializable {
 
             Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
             stage.setTitle("Login Admin");
-            stage.setScene(new Scene(root, 700, 500));
+            stage.setScene(new Scene(root, 750, 490));
             stage.show();
 
         } catch (IOException e) {

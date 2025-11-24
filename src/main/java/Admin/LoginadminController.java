@@ -55,7 +55,7 @@ public class LoginadminController {
                 Parent root = FXMLLoader.load(getClass().getResource("/fxml/dashboardd_admin.fxml"));
                 Stage stage = new Stage();
                 stage.setTitle("Dashboard Admin");
-                stage.setScene(new Scene(root));
+                stage.setScene(new Scene(root, 750, 490));
                 stage.show();
 
                 // Tutup window login

@@ -16,7 +16,7 @@ public class App extends Application {
             Parent root = FXMLLoader.load(getClass().getResource("/fxml/userrchoice.fxml"));
 
             stage.setTitle("Pilih User"); 
-            stage.setScene(new Scene(root, 700, 500)); 
+            stage.setScene(new Scene(root, 750, 490)); 
             stage.setResizable(false); 
             stage.show();
         } catch (IOException e) {

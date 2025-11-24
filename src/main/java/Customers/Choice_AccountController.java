@@ -22,13 +22,15 @@ public class Choice_AccountController implements Initializable {
     @FXML
     private void Register(ActionEvent event) {
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("/fxml/registercustomer.fxml"));
-
+            Parent root = FXMLLoader.load(getClass().getResource("/fxml/register_customer.fxml"));
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             stage.setTitle("Register Customer");
-            stage.setScene(new Scene(root, 700, 500));
-            stage.show();
 
+            // Paksa scene dengan ukuran 750x490 dan stage tidak bisa di-resize
+            Scene scene = new Scene(root, 750, 490);
+            stage.setScene(scene);
+            stage.setResizable(false); // opsional, supaya ukuran fix
+            stage.show();
         } catch (IOException e) {
             System.out.println("Gagal membuka halaman Register: " + e.getMessage());
         }
@@ -38,12 +40,13 @@ public class Choice_AccountController implements Initializable {
     private void Login(ActionEvent event) {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("/fxml/logincustomer.fxml"));
-
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             stage.setTitle("Login Customer");
-            stage.setScene(new Scene(root, 700, 500));
-            stage.show();
 
+            Scene scene = new Scene(root, 750, 490);
+            stage.setScene(scene);
+            stage.setResizable(false);
+            stage.show();
         } catch (IOException e) {
             System.out.println("Gagal membuka halaman Login: " + e.getMessage());
         }

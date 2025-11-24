@@ -88,7 +88,7 @@ public class Register_CustomerController {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("/fxml/logincustomer.fxml"));
             Stage stage = (Stage) txtName.getScene().getWindow();
-            stage.setScene(new Scene(root));
+            stage.setScene(new Scene(root, 750, 490));
             stage.show();
         } catch (IOException e) {
             showAlert(Alert.AlertType.ERROR, "Error", "Gagal membuka halaman login!");
