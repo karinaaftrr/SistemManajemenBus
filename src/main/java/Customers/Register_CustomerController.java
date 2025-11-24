@@ -24,7 +24,11 @@ public class Register_CustomerController {
     @FXML
     private void handleBack(ActionEvent event) {
         try {
+<<<<<<< HEAD
             Parent root = FXMLLoader.load(getClass().getResource("/fxml/userchoice.fxml"));
+=======
+            Parent root = FXMLLoader.load(getClass().getResource("/fxml/UserChoice.fxml"));
+>>>>>>> 43899cc (first commit)
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             stage.setTitle("Pilih Akun");
             stage.setScene(new Scene(root, 750, 490));

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.cell.*?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<StackPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="Admin.AvailableBussController"
+           prefWidth="750" prefHeight="500">
+
+    <children>
+        <AnchorPane prefWidth="750" prefHeight="500">
+
+            <!-- LEFT SIDEBAR -->
+            <AnchorPane prefWidth="150" prefHeight="500"
+                        styleClass="left-form"
+                        stylesheets="@../style/dashboardd_admin.css">
+                <children>
+                    <FontIcon iconLiteral="fas-user"
+                              iconColor="#fff8f8"
+                              iconSize="80"
+                              layoutX="40" layoutY="80"/>
+
+                    <Text text="Welcome," fill="white" layoutX="30" layoutY="120">
+                        <font><Font name="Berlin Sans FB" size="20"/></font>
+                    </Text>
+
+                    <Label text="Admin" textFill="#c4b2ff" layoutX="40" layoutY="145">
+                        <font><Font name="Arial Black" size="17"/></font>
+                    </Label>
+
+                    <VBox layoutX="10" layoutY="200" spacing="10" prefWidth="130">
+                        <children>
+                            <Button fx:id="btnDashboard" text="Dashboard" onAction="#openDashboard" prefHeight="31" prefWidth="130"/>
+                            <Button fx:id="btnAvailableBuses" text="Available Buses" onAction="#openAvailableBuses" prefHeight="31" prefWidth="130"/>
+                            <Button fx:id="btnBookingTicket" text="Booking Ticket" onAction="#openBookingTicket" prefHeight="31" prefWidth="130"/>
+                            <Button fx:id="btnCustomers" text="Customers" onAction="#openCustomers" prefHeight="31" prefWidth="130"/>
+                        </children>
+                    </VBox>
+
+                    <Button fx:id="btnLogout" text="Log Out" onAction="#logout"
+                            layoutX="10" layoutY="450"/>
+                </children>
+            </AnchorPane>
+
+            <!-- FORM INPUT -->
+            <AnchorPane layoutX="150" prefWidth="200" prefHeight="500"
+                        styleClass="root" stylesheets="@../style/availablebuss.css">
+                <children>
+                    <VBox layoutX="10" layoutY="20" spacing="7" prefWidth="180">
+                        <children>
+                            <Label text="Bus ID"/>
+                            <TextField fx:id="txtBusID"/>
+
+                            <Label text="Location"/>
+                            <TextField fx:id="txtLocation"/>
+
+                            <Label text="Status"/>
+                            <ComboBox fx:id="cbStatus" prefWidth="180"/>
+
+                            <Label text="Price"/>
+                            <TextField fx:id="txtPrice"/>
+
+                            <Label text="Date"/>
+                            <DatePicker fx:id="datePicker" prefWidth="180"/>
+                        </children>
+                    </VBox>
+
+                    <HBox layoutX="15" layoutY="330" spacing="5">
+                        <children>
+                            <Button fx:id="btnAdd" text="Add" prefWidth="80" onAction="#addBus"/>
+                            <Button fx:id="btnUpdate" text="Update" prefWidth="80" onAction="#updateBus"/>
+                        </children>
+                    </HBox>
+
+                    <HBox layoutX="15" layoutY="375" spacing="5">
+                        <children>
+                            <Button fx:id="btnReset" text="Reset" prefWidth="80" onAction="#resetForm"/>
+                            <Button fx:id="btnDelete" text="Delete" prefWidth="80" onAction="#deleteBus"/>
+                        </children>
+                    </HBox>
+                </children>
+            </AnchorPane>
+
+            <!-- TABLE AREA -->
+            <AnchorPane layoutX="350" prefWidth="400" prefHeight="500"
+                        styleClass="root" stylesheets="@../style/availablebuss.css">
+                <children>
+
+                    <TextField fx:id="txtSearch" promptText="Search"
+                               layoutX="10" layoutY="10" prefWidth="200"/>
+
+                    <TableView fx:id="tableBus" layoutY="50" prefWidth="400" prefHeight="440">
+                        <columns>
+                            <TableColumn fx:id="colBusID" text="Bus ID" prefWidth="70"/>
+                            <TableColumn fx:id="colLocation" text="Location" prefWidth="110"/>
+                            <TableColumn fx:id="colStatus" text="Status" prefWidth="80"/>
+                            <TableColumn fx:id="colPrice" text="Price" prefWidth="70"/>
+                            <TableColumn fx:id="colDate" text="Date" prefWidth="90"/>
+                        </columns>
+                    </TableView>
+
+                </children>
+            </AnchorPane>
+
+        </AnchorPane>
+    </children>
+</StackPane>
