@@ -8,7 +8,7 @@ module com.mycompany.systemmanagemenbus {
     requires java.base;
 
     opens com.mycompany.systemmanagemenbus to javafx.fxml;
-    opens Mahasiswa to javafx.fxml;
+    opens Customers to javafx.fxml;
     opens Admin to javafx.fxml;
 
     exports com.mycompany.systemmanagemenbus;

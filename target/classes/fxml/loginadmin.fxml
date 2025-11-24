@@ -12,21 +12,21 @@
 <?import javafx.scene.text.Text?>
 <?import org.kordamp.ikonli.javafx.FontIcon?>
 
-<StackPane prefHeight="500.0" prefWidth="700.0" styleClass="mainFxmlClass" stylesheets="@/style/loginadmin.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.LoginadminController">
+<StackPane prefHeight="490.0" prefWidth="750.0" styleClass="mainFxmlClass" stylesheets="@/style/loginadmin.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.LoginadminController">
 
     <children>
         <!-- Main Form -->
-        <AnchorPane fx:id="main_form" prefHeight="400.0" prefWidth="600.0" styleClass="right-form">
+        <AnchorPane fx:id="main_form" prefHeight="490.0" prefWidth="750.0" styleClass="left-form" stylesheets="@../style/loginadmin.css">
 
             <!-- Left Panel -->
-            <AnchorPane fx:id="leftPane" prefHeight="500.0" prefWidth="372.0" styleClass="left-form" stylesheets="@../style/loginadmin.css">
+            <AnchorPane fx:id="leftPane" prefHeight="500.0" prefWidth="392.0" stylesheets="@../style/loginadmin.css">
             <children>
-               <ImageView fitHeight="80.0" fitWidth="140.0" layoutX="101.0" layoutY="171.0" pickOnBounds="true" preserveRatio="true">
+               <ImageView fitHeight="80.0" fitWidth="140.0" layoutX="132.0" layoutY="171.0" pickOnBounds="true" preserveRatio="true">
                   <image>
                      <Image url="@../Image/bus.png" />
                   </image>
                </ImageView>
-               <Text fill="#fffefe" layoutX="80.0" layoutY="281.0" styleClass="title-text" text="InfoTayo">
+               <Text fill="#fffefe" layoutX="132.0" layoutY="281.0" styleClass="title-text" text="InfoBus">
                   <font>
                      <Font name="Arial Black" size="38.0" />
                   </font>
@@ -34,7 +34,7 @@
             </children></AnchorPane>
 
             <!-- Right Panel -->
-            <AnchorPane layoutX="342.0" prefHeight="500.0" prefWidth="358.0" styleClass="right-form" stylesheets="@../style/loginadmin.css">
+            <AnchorPane layoutX="392.0" prefHeight="500.0" prefWidth="372.0" styleClass="right-form" stylesheets="@../style/loginadmin.css">
 
                 <!-- Label -->
                 <Label layoutX="168.0" layoutY="179.0" text="Admin" textFill="#211e80">

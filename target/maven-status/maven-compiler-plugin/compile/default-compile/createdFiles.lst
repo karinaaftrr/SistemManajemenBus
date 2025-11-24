@@ -1,6 +1,8 @@
 Admin\LoginadminController.class
+Customers\Register_CustomerController.class
 com\mycompany\systemmanagemenbus\UserrChoiceController.class
+Admin\dashboardd_admincontroller.class
 com\mycompany\systemmanagemenbus\App.class
 module-info.class
-Mahasiswa\LoginMahasiswaController.class
-Admin\Dashboard_AdminController.class
+Customers\Choice_AccountController.class
+Customers\LoginCustomerController.class

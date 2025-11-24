@@ -8,7 +8,7 @@
 
 /* Bagian kiri */
 .left-form {
-    -fx-background-color: linear-gradient(to bottom right, #000080, #ADD8E6);
+    -fx-background-color: linear-gradient(to bottom right,  #051937, #003466, #0a1a2f);
     -fx-border-color: #000;
     -fx-border-width: .4px 0px .4px .4px;
 }

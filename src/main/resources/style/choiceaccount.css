@@ -12,7 +12,7 @@
     -fx-text-fill: #dff2ff;
 }
 
-.btn-admin{
+.btn-register{
     -fx-background-color: #0b3c5d;
     -fx-text-fill: white;
     -fx-font-size: 15px;
@@ -25,13 +25,13 @@
     -fx-border-width: 1.2;
 }
 
-.btn-admin:hover{
+.btn-register:hover{
     -fx-background-color: #145a8d;
     -fx-scale-x: 1.05;
     -fx-scale-y: 1.05;
 }
 
-.btn-ctm{
+.btn-login{
     -fx-background-color: white;
     -fx-text-fill: #000080;
     -fx-font-size: 15px;
@@ -49,7 +49,7 @@
 }
 
 /* Hover effect */
-.btn-ctm:hover{
+.btn-login:hover{
     -fx-background-color: #e9f6ff;
     -fx-scale-x: 1.05;
     -fx-scale-y: 1.05;

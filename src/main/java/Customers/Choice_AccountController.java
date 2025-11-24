@@ -1,4 +1,4 @@
-package com.mycompany.systemmanagemenbus;
+package Customers;
 
 import java.io.IOException;
 import java.net.URL;
@@ -12,39 +12,40 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class UserrChoiceController implements Initializable {
+public class Choice_AccountController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        // Tidak ada yang perlu diinisialisasi dulu
     }    
-
+    
     @FXML
-    private void loginAdmin(ActionEvent event) {
+    private void Register(ActionEvent event) {
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("/fxml/loginadmin.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/fxml/registercustomer.fxml"));
 
-            Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
-            stage.setTitle("Login Admin");
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stage.setTitle("Register Customer");
             stage.setScene(new Scene(root, 700, 500));
             stage.show();
 
         } catch (IOException e) {
-            System.out.println("Gagal membuka halaman Login Admin");
+            System.out.println("Gagal membuka halaman Register: " + e.getMessage());
         }
     }
 
     @FXML
-    private void ChoiceAccount(ActionEvent event) {
+    private void Login(ActionEvent event) {
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("/fxml/ChoiceAccount.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/fxml/logincustomer.fxml"));
 
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-            stage.setTitle("Pilih Akun");
+            stage.setTitle("Login Customer");
             stage.setScene(new Scene(root, 700, 500));
             stage.show();
 
         } catch (IOException e) {
-            System.out.println("Gagal membuka halaman Pilih Akun");
+            System.out.println("Gagal membuka halaman Login: " + e.getMessage());
         }
-       }
+    }
 }
